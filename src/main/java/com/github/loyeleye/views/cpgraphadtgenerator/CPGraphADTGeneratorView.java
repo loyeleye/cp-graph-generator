@@ -9,7 +9,7 @@ import com.vaadin.flow.router.PageTitle;
 import com.vaadin.flow.router.Route;
 import com.vaadin.flow.router.RouteAlias;
 
-@PageTitle("CP Graph ADT Generator")
+@PageTitle("About")
 @Route(value = "home", layout = MainLayout.class)
 @RouteAlias(value = "", layout = MainLayout.class)
 public class CPGraphADTGeneratorView extends VerticalLayout {
@@ -17,12 +17,12 @@ public class CPGraphADTGeneratorView extends VerticalLayout {
     public CPGraphADTGeneratorView() {
         setSpacing(false);
 
-        Image img = new Image("images/empty-plant.png", "placeholder plant");
+        Image img = new Image("images/anim.gif", "placeholder plant");
         img.setWidth("200px");
         add(img);
 
-        add(new H2("This place intentionally left empty"));
-        add(new Paragraph("It’s a place where you can grow your own UI 🤗"));
+        add(new H2("Graph Abstract Data Structure Generator"));
+        add(new Paragraph("Generate a graph that you can use for your toy / competitive programming problems 🤗"));
 
         setSizeFull();
         setJustifyContentMode(JustifyContentMode.CENTER);
